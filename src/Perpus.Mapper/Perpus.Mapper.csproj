@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Perpus.Domain\Perpus.Domain.csproj" />
+    <ProjectReference Include="..\Perpus.DTO\Perpus.DTO.csproj" />
+  </ItemGroup>
+
+</Project>

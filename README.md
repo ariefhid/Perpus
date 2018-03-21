@@ -54,7 +54,7 @@ this is my e-library API approach with CodeFirst
 - dotnet ef database update ## update database
 - dotnet Build ## Build Project
 - dotnet run ## run dotnet in current project path for testing and make sure running well
-- cd [Directory Project] ## .sln file folder
+- cd [Directory Project] ## WebAPI folder
 - dotnet publish -o [Your Directory (free)]
 - sudo nano /etc/systemd/system/[SERVICE_NAME].service ## Create the kestrel service definition file
 

@@ -21,7 +21,7 @@ this is my e-library API approach with CodeFirst
 - Edit config database (Connection String) in appsettings.json
 - Edit launchSetting.json in properties folder if you want change port
 
-# Execute Script on Linux Terminal
+# Execute Script on Terminal
 
 - sudo gedit /etc/nginx/sites-available/default ## Reverse Proxy Setting
 

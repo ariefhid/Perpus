@@ -14,7 +14,7 @@ this my e-library project approach with CodeFirst
 - Net Core SDK version 2.0 ++ for linux ## https://www.microsoft.com/net/download/linux-package-manager/ubuntu16-04/sdk-current
 - PostgreSQL version 9.0 ++ for linux ubuntu ## sudo apt-get install postgresql-9.6
 - PostgreSQL version 10 for Windows ## https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
-- if you need other database checkout this https://docs.microsoft.com/en-us/ef/core/providers/
+- if you need other database checkout this https://docs.microsoft.com/en-us/ef/core/providers/ and install the package
 
 # Configuration 
 
@@ -36,7 +36,7 @@ this my e-library project approach with CodeFirst
              proxy_set_header Host $host;
              proxy_cache_bypass $http_upgrade;
          }
-     }
+     }*
 
 - sudo nginx -t ## Verify the syntax of the nginx settings with the following
 - cd [Directory Project]/Perpus/src/Perpus/
@@ -71,7 +71,7 @@ this my e-library project approach with CodeFirst
        User=www-data
        Environment=ASPNETCORE_ENVIRONMENT=Production
        [Install]
-       WantedBy=multi-user.target
+       WantedBy=multi-user.target*
 - sudo systemctl enable [SERVICE_NAME].service ## Enable your new service to auto-start on system boot. other command Restart, disable, status, stop, start, etc.
 - Reboot
 - sudo systemctl status [SERVICE_NAME].service ## Verify that your service is running without error.

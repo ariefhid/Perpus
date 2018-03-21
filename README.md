@@ -26,7 +26,7 @@ this my e-library project approach with CodeFirst
 - sudo gedit /etc/nginx/sites-available/default ## Reverse Proxy Setting
 
 *Erase all existing contents and replace with the following. I'm assuming that your project runs on port 5000 by default. Modify your proxy pass as necessary.*
--   server {
+- server {
          listen 80;
          location / {
              proxy_pass http://localhost:5000;
@@ -37,7 +37,6 @@ this my e-library project approach with CodeFirst
              proxy_cache_bypass $http_upgrade;
          }
      }
-
 - sudo nginx -t ## Verify the syntax of the nginx settings with the following
 - cd [Directory Project]/Perpus/src/Perpus/
 - dotnet Restore ## Restore all references on Project

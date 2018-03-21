@@ -1,6 +1,6 @@
 # Perpus Web API
 
-this my e-library project approach with CodeFirst
+this is my e-library API approach with CodeFirst
 
 # OS
 

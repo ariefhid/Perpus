@@ -6,7 +6,6 @@ this my e-library project approach with CodeFirst
 
 - Windows 10
 - Linux Ubuntu 16.04
-- Nginx 
 
 # Pre-requisites
 
@@ -15,6 +14,7 @@ this my e-library project approach with CodeFirst
 - PostgreSQL version 9.0 ++ for linux ubuntu ## sudo apt-get install postgresql-9.6
 - PostgreSQL version 10 for Windows ## https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
 - if you need other database checkout this https://docs.microsoft.com/en-us/ef/core/providers/ and install the package
+- Nginx 
 
 # Configuration 
 

@@ -25,7 +25,7 @@ this my e-library project approach with CodeFirst
 
 - sudo gedit /etc/nginx/sites-available/default ## Reverse Proxy Setting
 
-Erase all existing contents and replace with the following. I'm assuming that your project runs on port 5000 by default. Modify your proxy pass as necessary.
+*Erase all existing contents and replace with the following. I'm assuming that your project runs on port 5000 by default. Modify your proxy pass as necessary.
      server {
          listen 80;
          location / {
@@ -59,7 +59,7 @@ Erase all existing contents and replace with the following. I'm assuming that yo
 - dotnet publish -o [Your Directory (free)]
 - sudo nano /etc/systemd/system/[SERVICE_NAME].service ## Create the kestrel service definition file
 
-  Enter the following into the new service definition file (case sensitive).
+  *Enter the following into the new service definition file (case sensitive).
        [Unit]
        Description=Example .NET Web API Application running on Ubuntu
        [Service]

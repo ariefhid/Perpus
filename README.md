@@ -26,6 +26,7 @@ this my e-library project approach with CodeFirst
 - sudo gedit /etc/nginx/sites-available/default ## Reverse Proxy Setting
 
 *Erase all existing contents and replace with the following. I'm assuming that your project runs on port 5000 by default. Modify your proxy pass as necessary.*
+
 -    server {
          listen 80;
          location / {

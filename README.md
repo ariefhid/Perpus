@@ -82,3 +82,4 @@ this is my e-library API approach with CodeFirst
 # Additional Doc
 - https://medium.com/@JohGeoCoder/deploying-a-net-core-2-0-web-application-to-a-production-environment-on-ubuntu-16-04-using-nginx-683b7e831e6
 - https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/?tabs=aspnetcore2x
+- https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units

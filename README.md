@@ -25,8 +25,8 @@ this my e-library project approach with CodeFirst
 
 - sudo gedit /etc/nginx/sites-available/default ## Reverse Proxy Setting
 
-*Erase all existing contents and replace with the following. I'm assuming that your project runs on port 5000 by default. Modify your proxy pass as necessary.\n
-     server {
+*Erase all existing contents and replace with the following. I'm assuming that your project runs on port 5000 by default. Modify your proxy pass as necessary.*
+-     server {
          listen 80;
          location / {
              proxy_pass http://localhost:5000;
@@ -36,7 +36,7 @@ this my e-library project approach with CodeFirst
              proxy_set_header Host $host;
              proxy_cache_bypass $http_upgrade;
          }
-     }*
+     }
 
 - sudo nginx -t ## Verify the syntax of the nginx settings with the following
 - cd [Directory Project]/Perpus/src/Perpus/
@@ -59,8 +59,8 @@ this my e-library project approach with CodeFirst
 - dotnet publish -o [Your Directory (free)]
 - sudo nano /etc/systemd/system/[SERVICE_NAME].service ## Create the kestrel service definition file
 
-  *Enter the following into the new service definition file (case sensitive).
-       [Unit]
+  *Enter the following into the new service definition file (case sensitive).*
+-       [Unit]
        Description=Example .NET Web API Application running on Ubuntu
        [Service]
        WorkingDirectory=[PUBLISH_DIRECTORY]
@@ -71,7 +71,7 @@ this my e-library project approach with CodeFirst
        User=www-data
        Environment=ASPNETCORE_ENVIRONMENT=Production
        [Install]
-       WantedBy=multi-user.target*
+       WantedBy=multi-user.target
 - sudo systemctl enable [SERVICE_NAME].service ## Enable your new service to auto-start on system boot. other command Restart, disable, status, stop, start, etc.
 - Reboot
 - sudo systemctl status [SERVICE_NAME].service ## Verify that your service is running without error.

@@ -44,6 +44,8 @@ namespace Perpus
                 c.SwaggerDoc("v1", new Info { Title = "Perpus", Version = "v1" });
             });
 
+            services.AddCors();
+
             services.AddMvc();
         }
 
@@ -56,6 +58,13 @@ namespace Perpus
             {
                 DatabaseInitializer.InitializeDevData(app);
                 app.UseSwagger();
+                app.UseCors(Options =>
+                {
+                    Options.WithOrigins(this.Configuration.GetSection("AllowCORSUrls").Get<string[]>())
+                    .AllowAnyHeader()
+                    .AllowAnyMethod()
+                    .AllowCredentials();
+                });
                 app.UseSwaggerUI(c =>
                 {
                     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Perpus");
@@ -66,6 +75,13 @@ namespace Perpus
             {
                 DatabaseInitializer.InitializeDevData(app);
                 app.UseSwagger();
+                app.UseCors(Options =>
+                {
+                    Options.WithOrigins(this.Configuration.GetSection("AllowCORSUrls").Get<string[]>())
+                    .AllowAnyHeader()
+                    .AllowAnyMethod()
+                    .AllowCredentials();
+                });
                 app.UseSwaggerUI(c =>
                 {
                     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Perpus");

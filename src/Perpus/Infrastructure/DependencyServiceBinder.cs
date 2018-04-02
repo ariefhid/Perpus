@@ -22,6 +22,9 @@ namespace Perpus.Infrastructure
             services.AddTransient<IAuthorManager, AuthorManager>();
             services.AddTransient<IAuthorStore, AuthorStore>();
             services.AddTransient<IAuthorValidator, AuthorValidator>();
+            services.AddTransient<IBookTypeManager, BookTypeManager>();
+            services.AddTransient<IBookTypeStore, BookTypeStore>();
+            services.AddTransient<IBookTypeValidator, BookTypeValidator>();
         }
     }
 }

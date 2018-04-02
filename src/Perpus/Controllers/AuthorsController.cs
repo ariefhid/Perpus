@@ -13,17 +13,18 @@ using Perpus.Core;
 namespace Perpus.Controllers
 {
     [Route("api/[Controller]")]
-    public class AuthorController : Controller
+    public class AuthorsController : Controller
     {
         #region Private Declaration
         IAuthorManager _authorManager;
         #endregion
-        
-        public AuthorController(IAuthorManager authorManager)
+        #region Constructor
+        public AuthorsController(IAuthorManager authorManager)
         {
             this._authorManager = authorManager;
         }
-
+        #endregion
+        #region Author CRUD
         [HttpGet]
         public async Task<IActionResult> Authors()
         {
@@ -80,5 +81,6 @@ namespace Perpus.Controllers
                 return NotFound();
             }
         }
+        #endregion
     }
 }

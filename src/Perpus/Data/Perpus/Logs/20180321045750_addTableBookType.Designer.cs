@@ -12,9 +12,10 @@ using System;
 namespace Perpus.Data.Perpus.Logs
 {
     [DbContext(typeof(PerpusContext))]
-    partial class PerpusContextModelSnapshot : ModelSnapshot
+    [Migration("20180321045750_addTableBookType")]
+    partial class addTableBookType
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

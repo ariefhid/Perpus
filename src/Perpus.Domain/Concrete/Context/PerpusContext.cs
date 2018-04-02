@@ -16,7 +16,11 @@ namespace Perpus.Domain.Concrete.Context
             builder.Entity<Author>()
               .HasIndex(i => i.Code)
               .IsUnique();
+            builder.Entity<BookType>()
+              .HasIndex(i => i.Code)
+              .IsUnique();
         }
         public DbSet<Author> Authors { get; set; }
+        public DbSet<BookType> BookTypes { get; set; }
     }
 }
